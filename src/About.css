@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#list__container {
+    padding-right: 90px;
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__item {
+    width: 956px;
+    height: 34px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: 25px;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+}
+
+.list__item--container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.arrowup {
+    position: absolute;
+    left: 92%;
+    width: 32px;
+    height: 32px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    * {
+        overflow-x: hidden;
+    }
+
+    #list__container {
+        padding: 0px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list__item {
+        margin: 15px 40px 0px 0px;
+        width: 320px;
+        height:  30px;
+
+    }
+
+    .arrowup {
+        position: absolute;
+        left: 80%;
+        bottom: 10%;
+        width: 32px;
+        height: 32px;
+    }
+
+
+}

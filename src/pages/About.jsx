@@ -1,13 +1,18 @@
 import React from "react";
+import "../About.css";
+import Navbar from "../components/navbar";
+import AboutHeader from "../components/aboutheader";
+import AboutList from "../components/aboutlist";
+import Footer from "../components/footer";
 
 
 const About = () => {
     return (
         <div>
-        <h1>A propos</h1>
-        <p>
-            Kasa est une plateforme de location de logements de particulier à particulier. Elle permet de trouver un logement à louer en France.
-        </p>
+        <Navbar />
+        <AboutHeader/>
+        <AboutList />
+        <Footer />
         </div>
     );
     }
