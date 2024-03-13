@@ -1,13 +1,17 @@
 import React  from "react";
+import Navbar from "../components/navbar";
+import Slider from "../components/slider";
+import Footer from "../components/footer";
 
 const Locations = () => {
     return (
         <div>
-        <h1>Locations</h1>
-        <p>
-            Kasa propose des logements à la location dans toute la France.
-        </p>
+        <Navbar />
+        <Slider />
+        <Footer />
         </div>
+
+
     );
     }
 

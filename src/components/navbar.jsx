@@ -6,7 +6,7 @@ import logoKasa from '../assets/logo_kasa.png';
 const Navbar = () => {
   return (
     <div id="navbar">
-      <img id="navbar__logo" src={logoKasa} alt="Le logo de Kasa" />
+        <img id="navbar__logo" src={logoKasa} alt="Le logo de Kasa" />
       <div id="navbar__menu">
         {/* Use NavLink for navigation */}
         <NavLink to="/" className="navbar__menu--item">

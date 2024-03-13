@@ -1,12 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* body {
-  margin: 0 auto;
-  max-width: 1300px;
-  min-height: 85vh;
-  width: 80%;
-} */
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -45,7 +45,7 @@ header {
 }
 
 #header__img {
-  width: 1240px;
+  width: 1280px;
   height: 223px;
   top: 163px;
   left: 100px;
@@ -129,6 +129,8 @@ header {
 }
 
 
+
+
 footer {
   position: relative;
   background-color: black;
@@ -176,6 +178,10 @@ color: white;
   margin: 10px;
 }
 
+header {
+  margin-left: 9.5px;
+}
+
 #header__img {
   width: 370px;
   height: 111px;
@@ -186,7 +192,7 @@ color: white;
 }
 
 #header__title {
-  left: 10%;
+  left: 7%;
   top: 30%;
   font-size: 20px;
   line-height: 56px;
