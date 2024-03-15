@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import locations from "../locations.json";
-import "../Slider.css";
+import "../Locations.css";
 import Error from "./error";
 import ArrowLeft from '../assets/arrow-left.png';
 import ArrowRight from '../assets/arrow-right.png';
