@@ -3,7 +3,6 @@ import Navbar from "../components/navbar";
 import Slider from "../components/slider";
 import Informations from "../components/informations";
 import Footer from "../components/footer";
-import ButtonsInfos from "../components/btn-infos";
 
 const Locations = () => {
     return (
@@ -11,7 +10,6 @@ const Locations = () => {
         <Navbar />
         <Slider />
         <Informations />
-        <ButtonsInfos />
         <Footer />
         </div>
 

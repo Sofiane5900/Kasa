@@ -1,8 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
 import locations from "../locations.json";
 import "../Locations.css";
 
+// Define InfosComponent outside of Informations component
+const InfosComponent = ({ location }) => {
+    const [showDescription, setShowDescription] = useState(false);
+    const [showEquipments, setShowEquipments] = useState(false);
+
+    const toggleDescription = () => {
+        setShowDescription(!showDescription);
+    };
+
+    const toggleEquipments = () => {
+        setShowEquipments(!showEquipments);
+    };
+
+    return (
+        <div className='infos__description--container'>
+            <div className="infos__btn--container">
+                <button type="button" className="infos__button" onClick={toggleDescription}>
+                    Description
+                </button>
+                {showDescription && (
+                    <p className="infos__button--text">{location.description}</p>
+                )}
+            </div>
+            <div className="infos__btn--container">
+                <button type="button" className="infos__button" onClick={toggleEquipments}>
+                    Equipments
+                </button>
+                {showEquipments && (
+                    <div>
+                        <ul className='infos__equipement--list'>
+                            {location.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
 
 const Informations = () => {
     
@@ -32,9 +72,8 @@ const Informations = () => {
                 <p className="infos__host--name">{location.host.name}</p>
                 <img src={location.host.picture} alt="Host" className="infos__host--picture" />
                 <p className="infos__rating">{location.rating}</p>      
-
-
             </div>
+            <InfosComponent location={location} />
         </div>
     );
 };

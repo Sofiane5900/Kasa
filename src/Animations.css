@@ -1,0 +1,10 @@
+@keyframes slide {
+    from {
+        max-height: 0;
+        overflow: hidden;
+    }
+    to {
+        max-height: 120px;
+    }
+}
+
