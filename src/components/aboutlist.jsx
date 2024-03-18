@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowUp from "../assets/arrowup.png";
+import "../About.css";
 
 const AboutList = () => {
     return (

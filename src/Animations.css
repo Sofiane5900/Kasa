@@ -1,10 +1,11 @@
-@keyframes slide {
+
+
+
+@keyframes rotate {
     from {
-        max-height: 0;
-        overflow: hidden;
+        transform: rotate(0deg);
     }
     to {
-        max-height: 120px;
+        transform: rotate(180deg);
     }
 }
-
