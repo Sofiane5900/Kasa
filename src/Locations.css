@@ -22,10 +22,10 @@
 
 .slider__pictures {
     display: flex;
+    max-width: 1500px;
+    margin-right: 0.5%;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
     list-style: none;
     overflow: hidden;
     border-radius: 25px;
@@ -68,9 +68,16 @@
     
 }
 
+.infos__container {
+    margin: auto;
+    max-width: 1230px;
+
+}
+
 .infos__location--container {
     position: relative;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .infos__title {
@@ -81,7 +88,6 @@
     list-style: none;
     overflow: hidden;
     text-align: left;
-    max-width: 1240px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -93,7 +99,6 @@
     .infos__location {
         display: flex;
         text-align: left;
-        max-width: 1240px;
         margin: auto;
         margin-bottom: 20px;
         font-weight: 500;
@@ -106,7 +111,6 @@
     list-style: none;
     overflow: hidden;
     text-align: left;
-    max-width: 1240px;
     margin: 0 auto;
   
 }
@@ -124,9 +128,9 @@
 
 .infos__host {
     display: flex;
+    position: relative;
     justify-content: flex-end;
-    margin: -100px auto 0;
-    max-width: 1200px;
+    margin: -120px auto 0;
 }
 
 
@@ -152,13 +156,31 @@
     
 }
 
+
+.rating__stars { 
+    position: absolute;
+    gap: 5%;
+    bottom: -50%;
+    right: 5%;
+    display: flex;
+
+}
+
+.star {
+    width: 36px;
+    height: 36px;
+}
+
+
+
+
 .infos__description--container {
     display: flex;
+    gap: 2%;
     justify-content: space-between;
     margin: auto;
-    max-width: 1300px;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 
 }
@@ -239,13 +261,15 @@
 
 
 @media screen and (max-width: 768px){
-    .slider__pictures {
-        width: 335px;
-        height: 255px;
-        top: 93.88px;
-        left: 20px;
 
-    }  
+    #slider__container {
+        max-width: 355px;
+        height: 255px;
+        border-radius: 20px;
+   
+    }
+
+
 
     .infos__title {
         width: 335px;
@@ -272,5 +296,55 @@
 
     
     }
+
+    .arrow-img {
+        width: 21.67px;
+        height: 29.8px;
+       }
+
+    .arrow__left {
+        top: 25%;
+        left: -8%;
+
+    }
+
+    .arrow__right {
+        top: 25%;
+        right: -8%;
+    }
+
+    .infos__host {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .infos__host--name {
+
+        font-size: 14px;
+   
+    }
+
+    .infos__host--picture {
+        
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .rating__stars {
+        display: flex;
+        top: 39%;
+        left: 5%;
+        gap: 0%;
+    }
+
+    .star {
+        width: 18px;
+        height: 18px;
+    }
+  
 
 }

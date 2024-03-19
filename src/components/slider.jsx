@@ -41,7 +41,7 @@ const Slider = () => {
     <div id="slider__container">
       <div className="slider__counter">{currentImageIndex + 1} / {totalImages}</div>
       <button onClick={prevSlide} className="arrow__left">
-        <img src={ArrowLeft} alt="Previous" />
+        <img src={ArrowLeft} alt="Previous" className="arrow-img"/>
       </button>
       <div className="slider__pictures">
         {location.pictures.map((picture, index) => (
@@ -56,7 +56,7 @@ const Slider = () => {
         ))}
       </div>
       <button onClick={nextSlide} className="arrow__right">
-        <img src={ArrowRight} alt="Next" />
+        <img src={ArrowRight} alt="Next" className="arrow-img"/>
       </button>
     </div>
   );
