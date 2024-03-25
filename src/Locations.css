@@ -75,7 +75,7 @@
 }
 
 .infos__collapse--expanded {
-    max-height: 120px; 
+    max-height: 10px; 
 }
 
 
@@ -197,6 +197,7 @@
 }
 
 .infos__btn--container {
+    position: relative;
     width: 1300px;
     margin: auto;
     padding: 0;
