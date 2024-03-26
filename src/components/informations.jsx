@@ -27,9 +27,6 @@ const InfosComponent = ({ location }) => {
                 <button type="button" className="infos__button" onClick={toggleDescription}>
                     Description
                 </button>
-                <div className="infos__arrow">
-                    <img className={`arrow-up ${arrowRotationDescription ? 'rotate' : ''}`} src={ArrowUp} alt="arrowup" onClick={toggleDescription} />
-                </div>
                 <div className={`infos__collapse ${showDescription ? 'infos__collapse--expanded' : ''}`}>
                     <p className="infos__button--text">{location.description}</p>
                 </div>
@@ -38,9 +35,6 @@ const InfosComponent = ({ location }) => {
                 <button type="button" className="infos__button" onClick={toggleEquipments}>
                     Equipments
                 </button>
-                <div className="infos__arrow">
-                    <img className={`arrow-up ${arrowRotationEquipments ? 'rotate' : ''}`} src={ArrowUp} alt="arrowup" onClick={toggleEquipments} />
-                </div>
                 <div className={`infos__collapse ${showEquipments ? 'infos__collapse--expanded' : ''}`}>
                     <ul className='infos__equipement--list'>
                         {location.equipments.map((equipment, index) => (
@@ -48,6 +42,12 @@ const InfosComponent = ({ location }) => {
                         ))}
                     </ul>
                 </div>
+            </div>
+            <div className="infos__arrow">
+                <img className={`description_arrow ${arrowRotationDescription ? 'rotate' : ''}`} src={ArrowUp} alt="arrowup" onClick={toggleDescription} />
+            </div>
+            <div className="infos__arrow">
+                <img className={`equipements_arrow ${arrowRotationEquipments ? 'rotate' : ''}`} src={ArrowUp} alt="arrowup" onClick={toggleEquipments} />
             </div>
         </div>
     );

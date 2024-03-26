@@ -75,7 +75,7 @@
 }
 
 .infos__collapse--expanded {
-    max-height: 10px; 
+    max-height: 200px; 
 }
 
 
@@ -218,16 +218,26 @@
     padding: 10px 20px 10px 15px;
 }
 
-.arrow-up {
+.equipements_arrow {
     position: absolute;
-    right: 15%; 
-    top: 20%; 
+    right: 21.5%; 
+    top: 85%; 
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background-color: black;
     z-index: 3;
 }
+
+.description_arrow {
+    position: absolute;
+    left: 45%; 
+    top: 85%; 
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 3;
+}
+
  
 .rotate {
     animation: rotate 1s ease;
@@ -356,4 +366,69 @@
     }
   
 
+    .infos__description--container {
+        display: flex;
+        width: 335px;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .infos__btn--container {
+        width: 335px;
+        margin: auto;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .infos__button {
+        width: 335px;
+        height: 52px;
+        font-size: 18px;
+        padding: 10px 20px 10px 15px;
+    }
+
+    .infos__button--text {
+        width: 335px;
+        overflow: hidden;
+        text-align: center;
+        background: #f6f6f6;
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+        margin-top: -1.2rem;
+        padding: 35px 0px 25px 0px;
+    }
+
+    .infos__equipement--list {
+        width: 335px;
+        text-align: center;
+        background: #f6f6f6;
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+        margin-top: -1.2rem;
+        padding: 35px 0px 25px 0px;
+    }
+
+    .description_arrow {
+        position: absolute;
+        left: 72%; 
+        top: 76.6%; 
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .equipements_arrow {
+        position: absolute;
+        right: 20%; 
+        top: 89%; 
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 3;
+    }
 }
