@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import locations from "../locations.json";
@@ -24,6 +23,7 @@ const Slider = () => {
   }
 
   const totalImages = location.pictures.length;
+  const isSingleImage = totalImages === 1;
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -39,25 +39,25 @@ const Slider = () => {
 
   return (
     <div id="slider__container">
-      <div className="slider__counter">{currentImageIndex + 1} / {totalImages}</div>
-      <button onClick={prevSlide} className="arrow__left">
-        <img src={ArrowLeft} alt="Previous" className="arrow-img"/>
-      </button>
+      {!isSingleImage && <div className="slider__counter">{currentImageIndex + 1} / {totalImages}</div>}
+      {!isSingleImage && <button onClick={prevSlide} className="arrow__left">
+        <img src={ArrowLeft} alt="" className="arrow-img"/>
+      </button>}
       <div className="slider__pictures">
         {location.pictures.map((picture, index) => (
           <img
             key={index}
             src={picture}
-            alt={`Location ${location.id} Picture ${index}`}
+            alt={`Location ${location.id}  ${index}`}
             style={{
               display: index === currentImageIndex ? "block" : "none"
             }}
           />
         ))}
       </div>
-      <button onClick={nextSlide} className="arrow__right">
-        <img src={ArrowRight} alt="Next" className="arrow-img"/>
-      </button>
+      {!isSingleImage && <button onClick={nextSlide} className="arrow__right">
+        <img src={ArrowRight} alt="" className="arrow-img"/>
+      </button>}
     </div>
   );
 };

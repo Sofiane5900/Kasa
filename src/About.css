@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "./Animations.css";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -18,7 +18,7 @@
 }
 
 .list__item {
-    width: 956px;
+    width: 1200px;
     height: 34px;
     font-family: Montserrat;
     font-size: 24px;
@@ -47,6 +47,30 @@
     left: 92%;
     width: 32px;
     height: 32px;
+}
+
+.rotate {
+    animation: rotate 1s ease;
+}
+
+.description__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+    padding: 0px 28px 10px 28px;
+
+}
+
+
+.description {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px 20px 10px 15px;
 }
 
 /* Media Queries */
@@ -84,4 +108,16 @@
     }
 
 
+    .description {
+        background-color: f6f6f6;
+        font-size: 18px;
+        padding: 10px 20px 10px 15px;
+    }
+
+    .description__container {
+        margin-top: -10px;
+        padding: 0px 40px 10px 0px;
+    }
+
+ 
 }

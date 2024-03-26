@@ -9,7 +9,7 @@ const Cards = () => {
     <section id="location__cards--container">
       {locations.map((location, index) => (
         <div className="location__cards" key={index}>
-          <NavLink className={NavLink} to={`/locations/${location.id}`}>
+          <NavLink className="card-link" to={`/locations/${location.id}`}>
             <p className="location__cards--text">{location.title}</p>
             <img className="location__cards--img" src={location.cover} alt={location.title} />
           </NavLink>
