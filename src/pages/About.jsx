@@ -1,9 +1,8 @@
 import React from "react";
-import "../About.css";
-import Navbar from "../components/navbar";
-import AboutHeader from "../components/aboutheader";
-import AboutList from "../components/aboutlist";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar/navbar.jsx";
+import AboutHeader from "../components/Aboutheader/aboutheader.jsx";
+import AboutList from "../components/Aboutlist/aboutlist.jsx";
+import Footer from "../components/Footer/footer.jsx";
 
 
 const About = () => {

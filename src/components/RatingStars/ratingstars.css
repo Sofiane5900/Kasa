@@ -1,0 +1,33 @@
+.rating__stars { 
+    position: absolute;
+    gap: 5%;
+    bottom: -50%;
+    right: 5%;
+    display: flex;
+    z-index: 50;
+
+}
+
+.star {
+    width: 36px;
+    height: 36px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .rating__stars {
+        display: flex;
+        margin-left: 13px;
+        top: 39%;
+        left: 5%;
+        gap: 0%;
+    }
+
+    .star {
+        width: 18px;
+        height: 18px;
+    }
+  
+
+}

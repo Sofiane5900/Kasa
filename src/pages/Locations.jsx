@@ -1,8 +1,8 @@
 import React  from "react";
-import Navbar from "../components/navbar";
-import Slider from "../components/slider";
-import Informations from "../components/informations";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar/navbar.jsx";
+import Slider from "../components/Slider/slider";
+import Informations from "../components/Informations/informations";
+import Footer from "../components/Footer/footer.jsx";
 
 const Locations = () => {
     return (

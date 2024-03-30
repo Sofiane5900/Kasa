@@ -1,0 +1,151 @@
+@IMPORT "../../Animations.css";
+
+
+.infos__btn--container {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infos__button {
+    width: 582px;
+    height: 52px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    background-color: #FF6060;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+}
+
+
+
+.equipements_arrow {
+    position: absolute;
+    right: 21.5%; 
+    top: 85%; 
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.description_arrow {
+    position: absolute;
+    left: 45%; 
+    top: 85%; 
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+ 
+.rotate {
+    animation: rotate 1s ease;
+}
+
+.infos__collapse {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
+
+.infos__collapse--expanded {
+    max-height: 200px; 
+}
+
+.infos__button--text {
+    width: 582px;
+    overflow: hidden;
+    text-align: center;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 33px;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+    padding: 35px 0px 25px 0px;
+}
+
+
+
+.infos__equipement--list {
+    list-style: none;
+    width: 582px;
+    text-align: center;
+    background: #f6f6f6;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+    padding: 35px 0px 25px 0px;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .infos__btn--container {
+        width: 335px;
+        margin: auto;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .infos__button {
+        width: 335px;
+        height: 52px;
+        font-size: 18px;
+        padding: 10px 20px 10px 15px;
+    }
+
+    .infos__button--text {
+        width: 335px;
+        overflow: hidden;
+        text-align: center;
+        background: #f6f6f6;
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+        margin-top: -1.2rem;
+        padding: 35px 0px 25px 0px;
+    }
+
+    .infos__equipement--list {
+        width: 335px;
+        text-align: center;
+        background: #f6f6f6;
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+        margin-top: -1.2rem;
+        padding: 35px 0px 25px 0px;
+    }
+
+    .description_arrow {
+        position: absolute;
+        left: 78%; 
+        top: 72.6%; 
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .equipements_arrow {
+        position: absolute;
+        right: 14%; 
+        top: 84%; 
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+}

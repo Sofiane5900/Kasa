@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Header from "../components/header";
-import Cards from "../components/cards";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar/navbar.jsx";
+import Header from "../components/Header/header.jsx";
+import Cards from "../components/Cards/cards.jsx";
+import Footer from "../components/Footer/footer.jsx";
 
 const Home = () => {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Error from "../components/error";
+import Navbar from "../components/Navbar/navbar.jsx";
+import Footer from "../components/Footer/footer.jsx";
+import Error from "../components/Error/error.jsx";
 
 
 const NotFound = () => {
