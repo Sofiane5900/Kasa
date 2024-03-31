@@ -29,8 +29,11 @@ const AboutList = () => {
                 </p>
               </div>
             )
+            
           }
+          customStyle={{ width: '1023px' }}
         />
+
         <Button
           buttonText="Respect"
           onClick={() => toggleDescription(1)}
@@ -46,6 +49,8 @@ const AboutList = () => {
               </div>
             )
           }
+          customStyle={{ width: '1023px' }}
+
         />
         <Button
           buttonText="Service"
@@ -62,6 +67,7 @@ const AboutList = () => {
               </div>
             )
           }
+          customStyle={{ width: '1023px' }}
         />
         <Button
           buttonText="Sécurité"
@@ -82,6 +88,8 @@ const AboutList = () => {
               </div>
             )
           }
+          customStyle={{ width: '1023px' }}
+
         />
       </ul>
     </div>

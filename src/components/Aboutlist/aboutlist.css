@@ -6,14 +6,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 #list__container {
-    padding-right: 60px;
     margin: auto;
-    max-width: 1300px;
+    max-width: 1150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+#list {
+    margin: auto;
 }
 
 .list__item {
@@ -66,8 +71,9 @@
 
 
 .description {
+    width: 989px;
     background-color: #f6f6f6;
-    color: #ff6060;
+    color: black;
     font-size: 17px;
     font-weight: 300;
     margin: 0;
@@ -81,16 +87,15 @@
 @media screen and (max-width: 768px) {
     
     * {
-        overflow-x: hidden;
+        overflow-x: clip;
     }
 
+
+
     #list__container {
-        padding: 0px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-right: 40px;
+        margin-bottom: 50px;
+
     }
 
     .list__item {
@@ -100,25 +105,25 @@
 
     }
 
-    .arrowup {
-        position: absolute;
-        left: 80%;
-        bottom: 10%;
-        width: 32px;
-        height: 32px;
-    }
-
+    
 
     .description {
-        background-color: f6f6f6;
-        font-size: 18px;
-        padding: 10px 20px 10px 15px;
+        width: 335px;
+        overflow: hidden;
+        text-align: center;
+        background: #f6f6f6;
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+        margin-top: -1.2rem;
+        padding: 35px 0px 25px 0px;
     }
 
     .description__container {
         margin-top: -10px;
         padding: 0px 40px 10px 0px;
     }
+
 
  
 }

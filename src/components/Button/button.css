@@ -2,7 +2,7 @@
 
 
 .infos__btn--container {
-    position: relative;
+
     width: 1300px;
     margin: auto;
     padding: 0;
@@ -23,29 +23,24 @@
     padding: 10px 20px 10px 15px;
 }
 
+ .infos__arrow--container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
-
-.equipements_arrow {
+.infos__arrow {
     position: absolute;
-    right: 21.5%; 
-    top: 85%; 
+    right: 6.5%; 
+    bottom: 30%; 
     width: 32px;
     height: 32px;
     cursor: pointer;
     z-index: 3;
 }
 
-.description_arrow {
-    position: absolute;
-    left: 45%; 
-    top: 85%; 
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    z-index: 3;
-}
 
- 
 .rotate {
     animation: rotate 1s ease;
 }
@@ -91,6 +86,7 @@
 
 @media screen and (max-width: 768px){
 
+
     .infos__btn--container {
         width: 335px;
         margin: auto;
@@ -128,24 +124,24 @@
         padding: 35px 0px 25px 0px;
     }
 
-    .description_arrow {
+
+    .infos__arrow--container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    
+    .infos__arrow {
         position: absolute;
-        left: 78%; 
-        top: 72.6%; 
-        width: 32px;
-        height: 32px;
+        right: 6.5%; 
+        bottom: 30%; 
+        width: 25px;
+        height: 25px;
         cursor: pointer;
         z-index: 3;
+        margin-top: 5px;
     }
 
-    .equipements_arrow {
-        position: absolute;
-        right: 14%; 
-        top: 84%; 
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        z-index: 3;
-    }
 
 }
